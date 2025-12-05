@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠 SUKOON - Your Safe Space</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js for mood history graph -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+</head>
+<body>
+    <!-- <header class="site-header hero-gradient"> -->
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🧠💚</span>
+                <span class="logo-text">SUKOON</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#" class="nav-link" data-page="home">Home</a>
+                <a href="#" class="nav-link" data-page="chatbot">Chatbot</a>
+                <a href="#" class="nav-link" data-page="booking">Book Appointment</a>
+                <a href="#" class="nav-link" data-page="resources">Resources</a>
+                <a href="#" class="nav-link" data-page="forum">Peer Support</a>
+                <!-- <a href="#" class="nav-link" data-page="dashboard">ad</a> -->
+                <a href="#wellness" class="nav-link" data-page="wellness">Wellness</a>
+                <a href="#" class="nav-link" data-page="login">Login</a>
+
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="hero-background">
+                    <div class="floating-element book">📚</div>
+                    <div class="floating-element cloud">☁️</div>
+                    <div class="floating-element orb"></div>
+                    <div class="floating-element orb"></div>
+                </div>
+                <div class="hero-content">
+                    <h1 class="hero-title">🧠 SUKOON</h1>
+                    <p class="hero-subtitle">Your Safe Space</p>
+                    <p class="hero-description">A stigma-free, confidential platform for every student's mental wellbeing.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-3d" data-page="chatbot">🤖 Start Chatbot</button>
+                        <button class="btn btn-secondary btn-3d" data-page="booking">📅 Book Appointment</button>
+                    </div>
+                </div>
+                <div class="hero-illustration">
+                    <div class="student-illustration">
+                        <div class="tree">🏫</div>
+                        <div class="student">👨‍🎓</div>
+                        <div class="book-float">📖</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="features-section">
+                <div class="container">
+                    <h2 class="section-title">How We Support You</h2>
+                    <div class="features-grid">
+                        <div class="feature-card card-3d">
+                            <div class="feature-icon">🤖</div>
+                            <h3>AI Chatbot</h3>
+                            <p>Instant confidential guidance</p>
+                        </div>
+                        <div class="feature-card card-3d">
+                            <div class="feature-icon">📅</div>
+                            <h3>Confidential Booking</h3>
+                            <p>Meet your college counsellor safely</p>
+                        </div>
+                        <div class="feature-card card-3d">
+                            <div class="feature-icon">📖</div>
+                            <h3>Resource Hub</h3>
+                            <p>Learn coping strategies in your language</p>
+                        </div>
+                        <div class="feature-card card-3d">
+                            <div class="feature-icon">💬</div>
+                            <h3>Peer Support</h3>
+                            <p>Talk to peers anonymously</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Why Section -->
+            <div class="why-section">
+                <div class="container">
+                    <h2 class="section-title">Why Choose Our Platform?</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-card our-platform card-3d">
+                            <h3>✅ Our Platform</h3>
+                            <ul>
+                                <li>Free for students</li>
+                                <li>Student-centric design</li>
+                                <li>Regional language support</li>
+                                <li>100% confidential</li>
+                                <li>Linked to your college</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card other-platforms card-3d">
+                            <h3>❌ Other Apps</h3>
+                            <ul>
+                                <li>Expensive subscriptions</li>
+                                <li>Western-focused content</li>
+                                <li>Generic solutions</li>
+                                <li>Not institution-specific</li>
+                                <li>Limited student support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-helpline">
+                            <h3>Need Immediate Help?</h3>
+                            <p class="helpline-number">📞 1-800-8955-07</p>
+                        </div>
+                        <div class="footer-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                        <div class="footer-institution">
+                            <p>College Mental Health Services</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <!-- Login Page -->
+        <section id="login" class="page">
+            <div class="login-container">
+                <div class="login-background">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
+                <div class="login-card card-3d">
+                    <h2>Welcome Back</h2>
+                    <p>Sign in to access your wellness journey</p>
+                    <form class="login-form" id="login-form">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Student ID / Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="anonymous-mode">
+                                <span class="checkmark"></span>
+                                Anonymous Mode (generates alias: User123)
+                            </label>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary btn-3d btn-full-width">Login</button>
+                            <button type="button" class="btn btn-secondary btn-3d btn-full-width" id="signup-btn">Sign Up</button>
+                            <button type="button" class="btn btn-outline btn-3d btn-full-width" id="google-auth">
+                                <span class="google-icon">𝐆</span> Continue with Google
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chatbot Page -->
+        <section id="chatbot" class="page">
+            <div class="chatbot-container">
+                <div class="chatbot-header">
+                    <div class="bot-avatar">🤖</div>
+                    <div class="bot-info">
+                        <h3>Wellness Assistant</h3>
+                        <p class="bot-status">Online • Always here to help</p>
+                    </div>
+                </div>
+                <div class="chatbot-main">
+                    <div class="chat-area" id="chat-area">
+                        <div class="message bot-message">
+                            <div class="message-avatar">🤖</div>
+                            <div class="message-bubble">
+                                <p>Hi there! I'm your wellness assistant. I'm here to provide confidential support and guidance. How are you feeling today?</p>
+                                <span class="message-time">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-actions">
+                        <div class="quick-actions">
+                            <button class="quick-action-btn btn-3d" data-action="relaxation">🌿 Relaxation Audio</button>
+                            <button class="quick-action-btn btn-3d" data-action="guide">📖 Self-Help Guide</button>
+                            <button class="quick-action-btn btn-3d" data-action="book" data-page="booking">📞 Book Counsellor</button>
+                        </div>
+                        <div class="chat-input-container">
+                            <input type="text" class="chat-input" placeholder="Type your message..." id="chat-input">
+                            <button class="send-btn btn-3d" id="send-btn">➤</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Page -->
+        <section id="booking" class="page">
+            <div class="booking-container">
+                <div class="container">
+                    <h2 class="page-title">Book Confidential Appointment</h2>
+                    <p class="page-subtitle">Schedule a safe, private session with our counselors</p>
+                    
+                    <div class="booking-form-card card-3d">
+                        <form class="booking-form" id="booking-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Select Counselor</label>
+                                    <select class="form-control" id="counselor-select" required>
+                                        <option value="">Choose a counselor...</option>
+                                        <option value="sharma">Dr. Sharma - Anxiety & Depression</option>
+                                        <option value="meena">Dr. Meena - Academic Stress</option>
+                                        <option value="patel">Dr. Patel - Relationship Issues</option>
+                                        <option value="kumar">Dr. Kumar - General Counseling</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Preferred Date</label>
+                                    <input type="date" class="form-control" id="appointment-date" required>
+                                </div>
+                            </div>
+                            
+                            <div class="time-slots">
+                                <label class="form-label">Available Time Slots</label>
+                                <div class="slots-grid" id="time-slots">
+                                    <button type="button" class="time-slot btn-3d" data-time="09:00">9:00 AM</button>
+                                    <button type="button" class="time-slot btn-3d" data-time="10:00">10:00 AM</button>
+                                    <button type="button" class="time-slot btn-3d" data-time="11:00">11:00 AM</button>
+                                    <button type="button" class="time-slot btn-3d" data-time="14:00">2:00 PM</button>
+                                    <button type="button" class="time-slot btn-3d" data-time="15:00">3:00 PM</button>
+                                    <button type="button" class="time-slot btn-3d" data-time="16:00">4:00 PM</button>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-3d btn-full-width">Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- WELLNESS: Meditation Timer + Mood Tracker -->
+<div>
+<section id="wellness" class="page" data-page="wellness" hidden>
+  <div class="card">
+    <h2>Relax — Meditation Timer</h2>
+    <p>Choose duration and press Start. Ek bell bajega jab session complete ho.</p>
+
+   <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+  <select id="timer-preset" aria-label="Choose preset duration">
+    <option value="60">1 min</option>
+    <option value="180">3 min</option>
+    <option value="300">5 min</option>
+    <option value="600">10 min</option>
+    <option value="custom">Custom</option>
+  </select>
+
+  <!-- custom minutes input (hidden by default)-->
+  <div id="custom-wrapper" style="display:none;align-items:center;gap:6px;">
+    <label for="timer-custom-min" style="font-size:13px;color:#64748b">mins</label>
+    <input id="timer-custom-min" type="number" min="1" max="180" placeholder="e.g. 7" style="width:80px;padding:8px;border-radius:8px;border:1px solid #e2e8f0" aria-label="Custom minutes">
+  </div>
+
+      <div class="circle-clock" id="circle-clock">
+  <svg class="progress-ring " width="220" height="220" viewBox="0 0 120 120">
+    <circle class="ring-bg" cx="60" cy="60" r="52" fill="transparent" stroke-width="12"></circle>
+    <circle class="ring" cx="60" cy="60" r="52" fill="transparent" stroke-width="12" stroke-linecap="round" stroke-dasharray="326.7256" stroke-dashoffset="326.7256"></circle>
+  </svg>
+  <div class="clock-center">
+    <div id="timer-display" class="timer-display-large">00:00</div>
+    <div class="timer-label">Ready</div>
+  </div>
+
+
+  
+</div>
+
+<!-- Benefits Accordion-->
+<div class="benefits-container">
+  <h3>Meditation Benefits by Duration</h3>
+
+  <!-- 1 min -->
+  <div class="benefit-item">
+    <div class="benefit-header">
+      <span>1 Minute Meditation</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="benefit-body">
+      <p>• Instant stress relief (fight-or-flight calm hota hai)</p>
+      <p>• Breathing slow hoti hai → heart rate stable hota hai</p>
+      <p>• Anxiety spike turant kam hota hai</p>
+      <p>• Focus 10–15% improve (short-term)</p>
+    </div>
+  </div>
+
+  <!-- 3 min -->
+  <div class="benefit-item">
+    <div class="benefit-header">
+      <span>3 Minute Meditation</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="benefit-body">
+      <p>• Acute stress (short-term) noticeably reduce</p>
+      <p>• Depression ke mild symptoms me immediate relief</p>
+      <p>• Brain ke frontal-lobe activation improve → better decision making</p>
+      <p>• Exam/Interview anxiety me instant relief</p>
+    </div>
+  </div>
+
+  <!-- 5 min -->
+  <div class="benefit-item">
+    <div class="benefit-header">
+      <span>5 Minute Meditation</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="benefit-body">
+      <p>• Negative thoughts frequency 20–30% reduce</p>
+      <p>• Depression ke moderate symptoms me noticeable calm</p>
+      <p>• Mind–body relaxation strong hoti hai</p>
+      <p>• Emotional control improve hota hai</p>
+    </div>
+  </div>
+
+  <!-- 10 min -->
+  <div class="benefit-item">
+    <div class="benefit-header">
+      <span>10 Minute Meditation</span>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="benefit-body">
+      <p>• Stress hormone (cortisol) 25–40% reduce hota hai</p>
+      <p>• Depression ke deep symptoms me significant improvement</p>
+      <p>• Mood balance strong hota hai → irritability kam hoti hai</p>
+      <p>• Long-term anxiety reduction</p>
+      <p>• Consistency ke sath focus aur concentration levels boost</p>
+    </div>
+  </div>
+
+</div>
+
+
+      <div class="timer-buttons">
+        <button id="timer-start" class="btn">Start</button>
+        <button id="timer-pause" class="btn" disabled>Pause</button>
+        <button id="timer-stop" class="btn" disabled>Stop</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mood-card">
+  <h2>Mood Tracker</h2>
+  <p>How do you feel after the session? Select & Save. (Confidential)</p>
+
+  <div class="mood-ui">
+    <div class="mood-emoji-row" role="radiogroup" aria-label="Choose mood">
+      <button class="mood-btn" data-mood="very_happy" aria-checked="false" title="Very Happy">😄</button>
+      <button class="mood-btn" data-mood="happy" aria-checked="false" title="Happy">🙂</button>
+      <button class="mood-btn" data-mood="neutral" aria-checked="false" title="Neutral">😐</button>
+      <button class="mood-btn" data-mood="sad" aria-checked="false" title="Sad">😔</button>
+      <button class="mood-btn" data-mood="very_sad" aria-checked="false" title="Very Sad">😢</button>
+    </div>
+
+    <div class="mood-inputs">
+      <label for="mood-note">Note (optional)</label>
+      <textarea id="mood-note" rows="2" placeholder="Kuch likhna hai to yahan..."></textarea>
+
+      <div class="mood-actions">
+        <button id="save-mood" class="btn primary">Save Mood</button>
+        <button id="export-mood" class="btn" title="Export saved moods as CSV">Export CSV</button>
+        <div id="mood-msg" class="mood-msg" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <hr style="margin:14px 0">
+
+  <div class="card mood-chart-card" aria-hidden="false" style="margin-top:14px;">
+  <h4 style="margin:0 0 8px 0;">Mood History (last 14 days)</h4>
+  <small class="muted">Average daily mood (5 = very good)</small>
+  <canvas id="moodChart" style="width:100%;height:240px;margin-top:10px;"></canvas>
+</div>
+    <div class="history-legend">
+      <span class="legend-dot very_happy"></span> Very Good
+      <span class="legend-dot neutral" style="margin-left:10px"></span> Neutral
+      <span class="legend-dot very_sad" style="margin-left:10px"></span> Low
+    </div>
+  </div>
+</div> 
+
+
+
+
+
+
+
+</div>
+
+        <!-- Resources Page -->
+        <section id="resources" class="page">
+            <div class="resources-container">
+                <div class="container">
+                    <h2 class="page-title">Resource Hub</h2>
+                    <p class="page-subtitle">Self-help guides, videos, and audio resources</p>
+                    
+                    <div class="resources-header">
+                        <div class="search-bar">
+                            <input type="text" class="form-control search-input" placeholder="Search resources..." id="resource-search">
+                        </div>
+                        <select class="form-control filter-select" id="category-filter">
+                            <option value="">All Categories</option>
+                            <option value="stress">Stress Management</option>
+                            <option value="exam">Exam Pressure</option>
+                            <option value="sleep">Sleep Issues</option>
+                            <option value="depression">Depression</option>
+                            <option value="anxiety">Anxiety</option>
+                            <option value="loneliness">Loneliness</option>
+                        </select>
+                    </div>
+                    
+                    <div class="resources-grid" id="resources-grid">
+                        <div class="resource-card card-3d" data-category="stress">
+                            <div class="resource-icon">🎵</div>
+                            <h3>5-Minute Breathing Exercise</h3>
+                            <p>Quick relaxation technique for busy students</p>
+                            <span class="resource-type">Audio</span>
+                            <button class="btn btn-primary btn-3d" data-resource="breathing">Listen Now</button>
+                        </div>
+                        
+                        <div class="resource-card card-3d" data-category="exam">
+                            <div class="resource-icon">🎥</div>
+                            <h3>Study Break Meditation</h3>
+                            <p>Reset your mind during study sessions</p>
+                            <span class="resource-type">Video</span>
+                            <button class="btn btn-primary btn-3d" data-resource="meditation">Watch Now</button>
+                        </div>
+                        
+                        <div class="resource-card card-3d" data-category="sleep">
+                            <div class="resource-icon">📄</div>
+                            <h3>Sleep Hygiene Guide</h3>
+                            <p>Tips for better sleep during college</p>
+                            <span class="resource-type">Article</span>
+                            <button class="btn btn-primary btn-3d" data-resource="sleep">Read Now</button>
+                        </div>
+                        
+                        <div class="resource-card card-3d" data-category="anxiety">
+                            <div class="resource-icon">🎵</div>
+                            <h3>Anxiety Relief Sounds</h3>
+                            <p>Calming soundscapes for anxious moments</p>
+                            <span class="resource-type">Audio</span>
+                            <button class="btn btn-primary btn-3d" data-resource="anxiety-sounds">Listen Now</button>
+                        </div>
+                        
+                        <div class="resource-card card-3d" data-category="depression">
+                            <div class="resource-icon">📄</div>
+                            <h3>Mood Lifting Techniques</h3>
+                            <p>Evidence-based strategies to improve mood</p>
+                            <span class="resource-type">Article</span>
+                            <button class="btn btn-primary btn-3d" data-resource="mood-techniques">Read Now</button>
+                        </div>
+                        
+                        <div class="resource-card card-3d" data-category="loneliness">
+                            <div class="resource-icon">🎥</div>
+                            <h3>Building Connections</h3>
+                            <p>How to make meaningful friendships in college</p>
+                            <span class="resource-type">Video</span>
+                            <button class="btn btn-primary btn-3d" data-resource="connections">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forum Page -->
+        <section id="forum" class="page">
+            <div class="forum-container">
+                <div class="container">
+                    <h2 class="page-title">Peer Support Forum</h2>
+                    <p class="page-subtitle">Share experiences and support each other anonymously</p>
+                    
+                    <div class="forum-post-box card-3d">
+                        <textarea class="form-control post-textarea" placeholder="Share your thoughts anonymously... Remember to keep it supportive and positive." id="new-post-content"></textarea>
+                        <div class="post-actions">
+                            <span class="post-note">📝 All posts are anonymous and moderated for positivity</span>
+                            <button class="btn btn-primary btn-3d" id="submit-post">Post</button>
+                        </div>
+                    </div>
+                    
+                    <div class="forum-posts" id="forum-posts">
+                        <div class="forum-post card-3d">
+                            <div class="post-header">
+                                <span class="post-author">User847</span>
+                                <span class="post-time">2 hours ago</span>
+                            </div>
+                            <div class="post-content">
+                                <p>Just wanted to share that meditation really helped me during finals week. Even 5 minutes made a difference! 🧘‍♀️</p>
+                            </div>
+                            <div class="post-actions">
+                                <button class="post-action-btn upvote">👍 <span>12</span></button>
+                                <button class="post-action-btn comment">💬 Comment</button>
+                                <button class="post-action-btn report">⚠️ Report</button>
+                            </div>
+                        </div>
+                        
+                        <div class="forum-post card-3d">
+                            <div class="post-header">
+                                <span class="post-author">User293</span>
+                                <span class="post-time">5 hours ago</span>
+                            </div>
+                            <div class="post-content">
+                                <p>Feeling overwhelmed with assignments? Remember it's okay to ask for help. The counselors here are amazing and really understanding. 💚</p>
+                            </div>
+                            <div class="post-actions">
+                                <button class="post-action-btn upvote">👍 <span>8</span></button>
+                                <button class="post-action-btn comment">💬 Comment</button>
+                                <button class="post-action-btn report">⚠️ Report</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Dashboard -->
+        <section id="dashboard" class="page">
+            <div class="dashboard-container">
+                <div class="container">
+                    <div class="dashboard-header">
+                        <h2 class="page-title">Welcome back, <span id="user-name">User123</span>! 👋</h2>
+                        <p class="page-subtitle">How are you feeling today?</p>
+                    </div>
+                    
+                    <div class="dashboard-grid">
+                        <div class="dashboard-card card-3d quick-actions">
+                            <h3>Quick Actions</h3>
+                            <div class="action-buttons">
+                                <button class="action-btn btn-3d" data-page="chatbot">🤖 Chat Now</button>
+                                <button class="action-btn btn-3d" data-page="booking">📅 Book Session</button>
+                                <button class="action-btn btn-3d" data-page="resources">📚 Browse Resources</button>
+                                <button class="action-btn btn-3d" data-page="forum">💬 Join Forum</button>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-card card-3d mood-tracker">
+                            <h3>Daily Mood Check-in</h3>
+                            <div class="mood-options">
+                                <button class="mood-btn btn-3d" data-mood="great">😊 Great</button>
+                                <button class="mood-btn btn-3d" data-mood="good">🙂 Good</button>
+                                <button class="mood-btn btn-3d" data-mood="okay">😐 Okay</button>
+                                <button class="mood-btn btn-3d" data-mood="down">😔 Down</button>
+                                <button class="mood-btn btn-3d" data-mood="stressed">😰 Stressed</button>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-card card-3d activity-summary">
+                            <h3>Recent Activity</h3>
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <span class="activity-icon">🤖</span>
+                                    <span>Chatbot session completed</span>
+                                    <span class="activity-time">Yesterday</span>
+                                </div>
+                                <div class="activity-item">
+                                    <span class="activity-icon">📚</span>
+                                    <span>Viewed breathing exercises</span>
+                                    <span class="activity-time">2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-card card-3d progress-widget">
+                            <h3>Your Progress</h3>
+                            <div class="progress-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">5</span>
+                                    <span class="stat-label">Sessions Completed</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">3</span>
+                                    <span class="stat-label">Resources Used</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">7</span>
+                                    <span class="stat-label">Days Active</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admin Dashboard -->
+        <section id="admin" class="page">
+            <div class="admin-container">
+                <div class="admin-sidebar">
+                    <div class="admin-logo">
+                        <span>👨‍💼 Admin Panel</span>
+                    </div>
+                    <nav class="admin-nav">
+                        <a href="#" class="admin-nav-link active" data-admin-section="overview">📊 Dashboard</a>
+                        <a href="#" class="admin-nav-link" data-admin-section="users">👥 Users</a>
+                        <a href="#" class="admin-nav-link" data-admin-section="appointments">📅 Appointments</a>
+                        <a href="#" class="admin-nav-link" data-admin-section="reports">📋 Reports</a>
+                        <a href="#" class="admin-nav-link" data-admin-section="resources">📚 Resources</a>
+                    </nav>
+                </div>
+                
+                <div class="admin-main">
+                    <div class="admin-header">
+                        <h2>Welcome, Admin</h2>
+                        <p>System overview and management</p>
+                    </div>
+                    
+                    <div class="admin-section active" id="admin-overview">
+                        <div class="admin-stats">
+                            <div class="stat-card card-3d">
+                                <div class="stat-icon">👥</div>
+                                <div class="stat-info">
+                                    <span class="stat-number" id="total-users">1,247</span>
+                                    <span class="stat-label">Active Users</span>
+                                </div>
+                            </div>
+                            <div class="stat-card card-3d">
+                                <div class="stat-icon">🤖</div>
+                                <div class="stat-info">
+                                    <span class="stat-number" id="chat-sessions">3,892</span>
+                                    <span class="stat-label">Chat Sessions</span>
+                                </div>
+                            </div>
+                            <div class="stat-card card-3d">
+                                <div class="stat-icon">📅</div>
+                                <div class="stat-info">
+                                    <span class="stat-number" id="appointments">156</span>
+                                    <span class="stat-label">Appointments</span>
+                                </div>
+                            </div>
+                            <div class="stat-card card-3d">
+                                <div class="stat-icon">📚</div>
+                                <div class="stat-info">
+                                    <span class="stat-number" id="resource-views">2,834</span>
+                                    <span class="stat-label">Resource Views</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="admin-charts">
+                            <div class="chart-card card-3d">
+                                <h3>Weekly Chat Sessions</h3>
+                                <div class="chart-container" style="position: relative; height: 300px;">
+                                    <canvas id="sessionsChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="chart-card card-3d">
+                                <h3>Appointment Trends</h3>
+                                <div class="chart-container" style="position: relative; height: 300px;">
+                                    <canvas id="appointmentsChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div class="modal hidden" id="success-modal">
+        <div class="modal-content card-3d">
+            <div class="modal-header">
+                <h3>✅ Success!</h3>
+            </div>
+            <div class="modal-body">
+                <p id="success-message">Action completed successfully!</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-3d" id="close-success-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="resource-modal">
+        <div class="modal-content card-3d">
+            <div class="modal-header">
+                <h3 id="resource-modal-title">Resource</h3>
+                <button class="close-btn" id="close-resource-modal">×</button>
+            </div>
+            <div class="modal-body">
+                <div id="resource-modal-content">
+                    <p>Loading resource...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="cleaned_app.js"></script>
+</body>
+</html>
